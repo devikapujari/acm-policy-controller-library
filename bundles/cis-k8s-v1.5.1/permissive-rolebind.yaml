@@ -2,8 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: permissive-rolebind
-  namespace: kube-system
-  namespace: kube-bench-gke-job
+  namespace: [kube-system, kube-bench-gke-job] 
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
