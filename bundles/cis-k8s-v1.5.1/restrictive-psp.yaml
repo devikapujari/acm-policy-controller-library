@@ -7,8 +7,6 @@ metadata:
 spec:
   privileged: false
   allowPrivilegeEscalation: false
-  requiredDropCapabilities:
-    - ALL
   allowedCapabilities:
   - CHOWN
   - DAC_OVERRIDE
